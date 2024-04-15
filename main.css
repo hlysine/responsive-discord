@@ -1,0 +1,22 @@
+@media screen and (max-width: 1384px) {
+  .guilds__2b93a {
+    width: 10px;
+    transition: width 0.1s ease-in-out;
+  }
+  .sidebar_e031be {
+    width: 10px;
+    transition: width 0.1s ease-in-out;
+  }
+  :has(.sidebar_e031be:hover) .guilds__2b93a {
+    width: 72px;
+  }
+  .guilds__2b93a:hover {
+    width: 72px;
+  }
+  :has(.guilds__2b93a:hover) .sidebar_e031be {
+    width: 240px;
+  }
+  .sidebar_e031be:hover {
+    width: 240px;
+  }
+}
