@@ -3,11 +3,11 @@
  * @author Lysine
  * @version 1.0.1
  * @description Responsive, collapsible sidebars for Discord
- * @source https://gist.github.com/hlysine/52d5fcb5c499dbb78c063ee4a22f7dbb
- * @website https://gist.github.com/hlysine/52d5fcb5c499dbb78c063ee4a22f7dbb
+ * @source https://github.com/hlysine/discord-responsive-sidebars
+ * @website https://github.com/hlysine/discord-responsive-sidebars
  */
 
 /* Credits to samuelthomas2774 for making the original theme. */
 
 /* IMPORT CSS */
-@import url(https://clearvision.github.io/ClearVision-v6/main.css);
+@import url(https://raw.githubusercontent.com/hlysine/discord-responsive-sidebars/main/main.css);
