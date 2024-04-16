@@ -1,11 +1,13 @@
-@media only screen and (min-width: 813px) and (max-width: 1384px) {
-  /* collapse the sidebars */
+@media only screen and (max-width: 1384px) {
   .guilds__2b93a {
     transition: width 0.1s ease-in-out;
   }
   .sidebar_e031be {
     transition: width 0.1s ease-in-out;
   }
+}
+@media only screen and (min-width: 813px) and (max-width: 1384px) {
+  /* collapse the sidebars */
   .guilds__2b93a:not(:hover) {
     width: 10px;
   }
@@ -32,12 +34,6 @@
 }
 @media only screen and (max-width: 812px) {
   /* collapse the sidebars */
-  .guilds__2b93a {
-    transition: width 0.1s ease-in-out;
-  }
-  .sidebar_e031be {
-    transition: width 0.1s ease-in-out;
-  }
   :has(.sidebar_e031be:not(:hover)) .guilds__2b93a:not(:hover) {
     width: 10px;
   }
