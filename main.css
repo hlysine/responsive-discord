@@ -1,22 +1,47 @@
-@media screen and (max-width: 1384px) {
+@media only screen and (min-width: 813px) and (max-width: 1384px) {
+  /* collapse the sidebars */
   .guilds__2b93a {
-    width: 10px;
     transition: width 0.1s ease-in-out;
   }
   .sidebar_e031be {
-    width: 10px;
     transition: width 0.1s ease-in-out;
   }
-  :has(.sidebar_e031be:hover) .guilds__2b93a {
-    width: 72px;
+  .guilds__2b93a:not(:hover) {
+    width: 10px;
   }
-  .guilds__2b93a:hover {
-    width: 72px;
+  .sidebar_e031be:not(:hover) {
+    width: 48px;
   }
-  :has(.guilds__2b93a:hover) .sidebar_e031be {
-    width: 240px;
+  /* leave a wider space for private channel avatars */
+  .sidebar_e031be:has(.privateChannels__9b518):not(:hover) {
+    width: 64px;
   }
-  .sidebar_e031be:hover {
-    width: 240px;
+  /* don't let the server boost text wrap */
+  .textArea__81b51 {
+    overflow: hidden;
+  }
+  .textArea__81b51 .goalText__38c12 {
+    text-wrap: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  /* hide the overflowing quick controls next to the user avatar */
+  .sidebar_e031be:not(:hover) .flex_f18b02.horizontal__4848b.justifyStart__6f8c8.alignStretch__2d62d.noWrap__5c413 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 812px) {
+  /* collapse the sidebars */
+  .guilds__2b93a {
+    transition: width 0.1s ease-in-out;
+  }
+  .sidebar_e031be {
+    transition: width 0.1s ease-in-out;
+  }
+  :has(.sidebar_e031be:not(:hover)) .guilds__2b93a:not(:hover) {
+    width: 10px;
+  }
+  :has(.guilds__2b93a:not(:hover)) .sidebar_e031be:not(:hover) {
+    width: 10px;
   }
 }
