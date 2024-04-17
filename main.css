@@ -41,3 +41,18 @@
     width: 10px;
   }
 }
+@media only screen and (max-width: 578px) {
+  /* collapse the message search bar */
+  .searchBar__5a20a:not(:focus-within) {
+    width: auto;
+  }
+  .searchBar__5a20a:not(:focus-within) .DraftEditor-root {
+    width: 0;
+    margin: 0;
+    padding: 0;
+  }
+  /* wrap the channel text area */
+  .channelTextArea_c2094b .inner__9fd0b {
+    flex-wrap: wrap;
+  }
+}
