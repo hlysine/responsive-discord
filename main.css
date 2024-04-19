@@ -51,6 +51,9 @@
   .chat__52833 .content__01e65 .container_f79ab4:not(:hover) {
     width: 10px;
   }
+  .chat__52833 .content__01e65 .container_f79ab4:not(:hover) > * {
+    display: none;
+  }
 }
 @media only screen and (max-width: 812px) {
   /* collapse the sidebars */
