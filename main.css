@@ -6,7 +6,7 @@
     transition: width 0.1s ease-in-out;
   }
 }
-@media only screen and (min-width: 813px) and (max-width: 1384px) {
+@media only screen and (min-width: 812px) and (max-width: 1384px) {
   /* collapse the sidebars */
   .guilds__2b93a:not(:hover) {
     width: 10px;
@@ -27,12 +27,29 @@
     white-space: nowrap;
     overflow: hidden;
   }
-  /* hide the overflowing quick controls next to the user avatar */
+  /* hide the overflowing quick controls next to the user avatar and game icon */
   .sidebar_e031be:not(:hover) .flex_f18b02.horizontal__4848b.justifyStart__6f8c8.alignStretch__2d62d.noWrap__5c413 {
     display: none;
   }
-  .sidebar_e031be:not(:hover) li.containerDefault_ae2ea4 .iconItem__56989 {
+  .sidebar_e031be:not(:hover) .activityPanel_b73e7a .actions_d57dc4 {
     display: none;
+  }
+  /* hide icons on the right side of channel names */
+  .sidebar_e031be:not(:hover) li.containerDefault_ae2ea4 .children__563f2 {
+    display: none;
+  }
+  /* if a channel has a "new" badge, color the icon */
+  .sidebar_e031be:not(:hover) li.containerDefault_ae2ea4:has([style*='text-brand']) .iconContainer__6a580 .icon__67ab4 {
+    color: var(--text-brand);
+  }
+}
+@media only screen and (max-width: 900px) {
+  /* collapse the server member list */
+  .chat__52833 .content__01e65 .container_f79ab4 {
+    transition: width 0.1s ease-in-out;
+  }
+  .chat__52833 .content__01e65 .container_f79ab4:not(:hover) {
+    width: 10px;
   }
 }
 @media only screen and (max-width: 812px) {
